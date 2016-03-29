@@ -1,0 +1,19 @@
+
+import random
+x=random.randint(1, 100)
+print("Este programa generará un número aleatorio entre el 1 y 100 con el fin de que usted lo adivine")
+num=0
+veces=0
+
+while num != x:
+  veces+=1
+  num = int(input("Adivina el numero:  "))
+  if (num>x):
+    print("muy alto")
+  elif (num<x):
+    print("muy bajo")
+                
+
+print("El número es correcto, "+(str(x)+"\t"))
+print("Intentos: " + (str(veces)+"\t"));
+
